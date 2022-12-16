@@ -1,0 +1,28 @@
+import React from "react";
+import img from "../../img/logo.png";
+import "../../styles/NavBar.css";
+function HomeNavBar() {
+	return (
+		<div className="navbar-section-logo">
+			<div className="moringa-log">
+				<div className="logo">
+					<img src={img} alt="Moringa Logo" />
+				</div>
+				<div className="profile-img">
+					<div className="profile-pic">
+						<img
+							src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+							alt="Profile Picture"
+						/>
+					</div>
+					<div className="name-position">
+						<h1>Denis Ouma</h1>
+						<h2>Software Engineer</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+export default HomeNavBar;

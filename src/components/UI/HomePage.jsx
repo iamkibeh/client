@@ -1,8 +1,9 @@
 import React from "react";
+import HomeNavBar from "../reusable/HomeNavBar";
 function HomePage() {
 	return (
-		<div>
-			<h1>Welcome to moringa schoool allumi</h1>
+		<div className="home-page-container">
+			<HomeNavBar />
 		</div>
 	);
 }

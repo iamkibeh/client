@@ -1,0 +1,53 @@
+:root {
+	--primary-color: #fff;
+	--seconndary-color: #000;
+	--button-color: #fc6c0f;
+	--weight-font-Colour: #15284c;
+	--grey-color: #ccc;
+	--background-color: #f7f9fa;
+}
+.navbar-section-logo {
+	border-bottom: 1px solid #e4e7eb;
+}
+.moringa-log {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px;
+}
+.logo {
+	height: 40px;
+}
+.logo > img {
+	height: inherit;
+	object-fit: cover;
+}
+.profile-img {
+	display: flex;
+	align-items: center;
+}
+.profile-pic {
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+}
+.profile-pic > img {
+	height: inherit;
+	width: inherit;
+	object-fit: cover;
+	border-radius: inherit;
+}
+.name-position {
+	margin-left: 15px;
+}
+.name-position > h1 {
+	font-weight: 600;
+	font-size: 15px;
+}
+.name-position > h2 {
+	font-weight: 400;
+	font-size: 13px;
+	color: var(--grey-color);
+}
