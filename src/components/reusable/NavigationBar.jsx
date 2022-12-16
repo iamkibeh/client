@@ -258,7 +258,7 @@ function NavigationBar() {
 						<div className="profile-img-data">
 							<img
 								src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
-								alt=""
+								alt="profile"
 							/>
 						</div>
 						<div className="inner-title-data">
