@@ -4,8 +4,19 @@ import logo from "../../img/logo.png";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
+import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 
 function NavigationBar() {
+	const [jobs, setJobs] = React.useState(true);
+	const [started, SetStarted] = React.useState(true);
+
+	const handleJobs = (e) => {
+		setJobs((current) => !current);
+	};
+
+	const handleStarted = (e) => {
+		setJobs((current) => !current);
+	};
 	return (
 		<div className="dash-board-section">
 			<div className="side-bar">
@@ -32,7 +43,7 @@ function NavigationBar() {
 						</Link>
 					</div>
 					<div className="nav-menu">
-						<Link to="/myportfolio/" className="icon-name">
+						<Link to="/c/home/" className="icon-name">
 							<div className="options-menu">
 								<Icon
 									icon="material-symbols:home-outline-rounded"
@@ -71,7 +82,7 @@ function NavigationBar() {
 						</Link>
 					</div>
 					<div className="nav-menu">
-						<Link to="/myportfolio/" className="icon-name">
+						<Link to="/m/memmbers" className="icon-name">
 							<div className="options-menu">
 								<Icon
 									icon="ri:group-line"
@@ -82,6 +93,127 @@ function NavigationBar() {
 								<p>Memmbers</p>
 							</div>
 						</Link>
+					</div>
+					<div className="view-more">
+						<div className="align-item-btn">
+							<ExpandMoreRoundedIcon />
+							<h3 onClick={handleJobs}>Get Started</h3>
+						</div>
+						{started && (
+							<>
+								<div className="nav-menu">
+									<Link to="/m/all-jobs/" className="icon-name">
+										<div className="options-menu jobs-section">
+											🏠
+											<p>Welcome</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/all-jobs/" className="icon-name">
+										<div className="options-menu jobs-section">
+											👉
+											<p>Start Here</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/all-jobs/" className="icon-name">
+										<div className="options-menu jobs-section">
+											❓<p>FAQ</p>
+										</div>
+									</Link>
+								</div>
+							</>
+						)}
+					</div>
+					<div className="view-more">
+						<div className="align-item-btn">
+							<ExpandMoreRoundedIcon />
+							<h3 onClick={handleJobs}>Jobs Board</h3>
+						</div>
+						{jobs && (
+							<>
+								<div className="nav-menu">
+									<Link to="/m/all-jobs/" className="icon-name">
+										<div className="options-menu jobs-section">
+											<Icon
+												icon="uim:briefcase"
+												color="#fc6c0f "
+												height="20px"
+												width="20px"
+											/>
+											<p>All Jobs</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/front-end/" className="icon-name">
+										<div className="options-menu jobs-section">
+											<Icon
+												icon="uim:briefcase"
+												color="#fc6c0f "
+												height="20px"
+												width="20px"
+											/>
+											<p>Front-End</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/back-end/" className="icon-name">
+										<div className="options-menu jobs-section">
+											<Icon
+												icon="uim:briefcase"
+												color="#fc6c0f "
+												height="20px"
+												width="20px"
+											/>
+											<p>Back-End</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/full-stack/" className="icon-name">
+										<div className="options-menu jobs-section">
+											<Icon
+												icon="uim:briefcase"
+												color="#fc6c0f "
+												height="20px"
+												width="20px"
+											/>
+											<p>Full-Stack</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/mobile/" className="icon-name">
+										<div className="options-menu jobs-section">
+											<Icon
+												icon="uim:briefcase"
+												color="#fc6c0f "
+												height="20px"
+												width="20px"
+											/>
+											<p>Mobile</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/devops/" className="icon-name">
+										<div className="options-menu jobs-section">
+											<Icon
+												icon="uim:briefcase"
+												color="#fc6c0f "
+												height="20px"
+												width="20px"
+											/>
+											<p>DevOps</p>
+										</div>
+									</Link>
+								</div>
+							</>
+						)}
 					</div>
 				</div>
 			</div>
