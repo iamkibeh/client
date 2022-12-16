@@ -40,3 +40,20 @@
 	margin-left: 20px;
 	cursor: pointer;
 }
+
+/* Logo section design */
+.logo-section {
+	height: 30px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 15px;
+}
+.top-logo-nav {
+	border-bottom: 1px solid var(--line-draw);
+	display: flex;
+	align-items: center;
+}
+.logo-section > img {
+	height: inherit;
+	object-fit: cover;
+}
