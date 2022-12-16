@@ -57,3 +57,26 @@
 	height: inherit;
 	object-fit: cover;
 }
+.options-menu {
+	display: flex;
+	align-items: center;
+}
+.options-menu > p {
+	padding: 10px;
+	font-style: none;
+	color: #666363;
+	font-family: sf pro text, -apple-system, BlinkMacSystemFont, segoe ui, roboto,
+		oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
+}
+.icon-name {
+	text-decoration-line: none;
+}
+.nav-menu {
+	padding-left: 25px;
+}
+.nav-menu:hover {
+	background-color: #e2eaee;
+}
+.nav-menus {
+	margin-top: 20px;
+}
