@@ -1,0 +1,16 @@
+/* Universal colour  */
+:root {
+	--primary-color: #fff;
+	--seconndary-color: #000;
+	--button-color: #fc6c0f;
+	--weight-font-Colour: #15284c;
+	--grey-color: #ccc;
+	--background-color: #f7f9fa;
+	--line-draw: #e4e7eb;
+}
+.side-bar {
+	background-color: var(--primary-color);
+	width: 20%;
+	height: 85vh;
+	border-right: 1px solid var(--line-draw);
+}

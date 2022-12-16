@@ -5,9 +5,10 @@
 	--weight-font-Colour: #15284c;
 	--grey-color: #ccc;
 	--background-color: #f7f9fa;
+	--line-draw: #e4e7eb;
 }
 .navbar-section-logo {
-	border-bottom: 1px solid #e4e7eb;
+	border-bottom: 1px solid var(--line-draw);
 }
 .moringa-log {
 	display: flex;
@@ -47,6 +48,4 @@
 
 .name-position {
 	cursor: pointer;
-	/* background-color: red; */
-	border-radius: 50px;
 }

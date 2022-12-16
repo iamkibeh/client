@@ -19,11 +19,7 @@ function HomeNavBar() {
 					</div>
 					<div className="name-position">
 						<IconButton aria-label="delete">
-							<Icon
-								icon="material-symbols:expand-more-rounded"
-								// width="30"
-								// height="30"
-							/>
+							<Icon icon="material-symbols:expand-more-rounded" />
 						</IconButton>
 					</div>
 				</div>
