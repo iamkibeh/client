@@ -13,6 +13,9 @@ import BackEnd from "./components/pages/BackEnd";
 import FullStack from "./components/pages/FullStack";
 import Mobile from "./components/pages/Mobile";
 import DevOps from "./components/pages/DevOps";
+import Welcome from "./components/pages/Welcome";
+import StartHere from "./components/pages/StartHere";
+import FAQ from "./components/pages/FAQ";
 function App() {
 	return (
 		<>
@@ -46,6 +49,13 @@ function App() {
 										/>
 										<Route exact path={"/m/mobile/"} element={<Mobile />} />
 										<Route exact path={"/m/devops/"} element={<DevOps />} />
+										<Route exact path={"/m/welcome/"} element={<Welcome />} />
+										<Route
+											exact
+											path={"/m/start-here/"}
+											element={<StartHere />}
+										/>
+										<Route exact path={"/m/faq/"} element={<FAQ />} />
 									</Routes>
 								</div>
 							</div>

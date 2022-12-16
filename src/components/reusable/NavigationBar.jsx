@@ -9,13 +9,17 @@ import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 function NavigationBar() {
 	const [jobs, setJobs] = React.useState(true);
 	const [started, SetStarted] = React.useState(true);
+	const [community, setCommunity] = React.useState(false);
 
 	const handleJobs = (e) => {
 		setJobs((current) => !current);
 	};
 
 	const handleStarted = (e) => {
-		setJobs((current) => !current);
+		SetStarted((current) => !current);
+	};
+	const handleCommunity = (e) => {
+		setCommunity((current) => !current);
 	};
 	return (
 		<div className="dash-board-section">
@@ -97,12 +101,12 @@ function NavigationBar() {
 					<div className="view-more">
 						<div className="align-item-btn">
 							<ExpandMoreRoundedIcon />
-							<h3 onClick={handleJobs}>Get Started</h3>
+							<h3 onClick={handleStarted}>Get Started</h3>
 						</div>
 						{started && (
 							<>
 								<div className="nav-menu">
-									<Link to="/m/all-jobs/" className="icon-name">
+									<Link to="/m/welcome/" className="icon-name">
 										<div className="options-menu jobs-section">
 											🏠
 											<p>Welcome</p>
@@ -110,7 +114,7 @@ function NavigationBar() {
 									</Link>
 								</div>
 								<div className="nav-menu">
-									<Link to="/m/all-jobs/" className="icon-name">
+									<Link to="/m/start-here/" className="icon-name">
 										<div className="options-menu jobs-section">
 											👉
 											<p>Start Here</p>
@@ -118,7 +122,7 @@ function NavigationBar() {
 									</Link>
 								</div>
 								<div className="nav-menu">
-									<Link to="/m/all-jobs/" className="icon-name">
+									<Link to="/m/faq/" className="icon-name">
 										<div className="options-menu jobs-section">
 											❓<p>FAQ</p>
 										</div>
@@ -209,6 +213,39 @@ function NavigationBar() {
 												width="20px"
 											/>
 											<p>DevOps</p>
+										</div>
+									</Link>
+								</div>
+							</>
+						)}
+					</div>
+					<div className="view-more">
+						<div className="align-item-btn">
+							<ExpandMoreRoundedIcon />
+							<h3 onClick={handleCommunity}>Community</h3>
+						</div>
+						{community && (
+							<>
+								<div className="nav-menu">
+									<Link to="/m/all-jobs/" className="icon-name">
+										<div className="options-menu jobs-section">
+											📆
+											<p>Events</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/all-jobs/" className="icon-name">
+										<div className="options-menu jobs-section">
+											📢
+											<p>Announcements</p>
+										</div>
+									</Link>
+								</div>
+								<div className="nav-menu">
+									<Link to="/m/all-jobs/" className="icon-name">
+										<div className="options-menu jobs-section">
+											💬<p>Discussion Board</p>
 										</div>
 									</Link>
 								</div>
