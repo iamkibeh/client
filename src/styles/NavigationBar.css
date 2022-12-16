@@ -11,6 +11,7 @@
 .side-bar {
 	background-color: var(--primary-color);
 	height: 85vh;
+
 	border-right: 1px solid var(--line-draw);
 	position: relative;
 }
@@ -82,7 +83,7 @@
 .nav-menus {
 	margin-top: 20px;
 	overflow: scroll;
-	/* height: 500px; */
+	height: 70vh;
 }
 ::-webkit-scrollbar {
 	width: 0.1px;
