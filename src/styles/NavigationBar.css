@@ -12,11 +12,13 @@
 	background-color: var(--primary-color);
 	height: 85vh;
 	border-right: 1px solid var(--line-draw);
+	position: relative;
 }
 .footer-section {
 	background-color: var(--weight-font-Colour);
 	height: 6.7vh;
 	color: var(--primary-color);
+	z-index: 3;
 }
 .footer-inner {
 	justify-content: space-between;
@@ -79,6 +81,11 @@
 }
 .nav-menus {
 	margin-top: 20px;
+	overflow: scroll;
+	/* height: 500px; */
+}
+::-webkit-scrollbar {
+	width: 0.1px;
 }
 .view-more {
 	/* margin-left: 5px; */
@@ -106,4 +113,38 @@
 }
 .dash-board-section {
 	width: 16%;
+}
+.dash-board-section {
+	/* position: relative; */
+}
+.bottom-profile-bar {
+	position: absolute;
+	/* height: 50px; */
+	width: 100%;
+	bottom: 0px;
+	border-top: 1px solid var(--line-draw);
+	border-right: 1px solid var(--line-draw);
+	background-color: var(--primary-color);
+	z-index: 2;
+}
+.profile-details-inner {
+	margin: 10px !important;
+	width: 70%;
+	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+}
+.profile-img-data {
+	height: 50px;
+	width: 50px;
+	/* width: 90%; */
+	margin: 0 auto;
+}
+
+.profile-img-data > img {
+	height: inherit;
+	width: inherit;
+	object-fit: cover;
+	border-radius: 5px;
 }

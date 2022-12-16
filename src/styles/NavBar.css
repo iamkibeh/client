@@ -9,12 +9,17 @@
 }
 .navbar-section-logo {
 	border-bottom: 1px solid var(--line-draw);
+	/* display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between; */
 }
 .moringa-log {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-between !important;
 	padding: 20px;
+	/* width: 100%; */
 	background-color: var(--primary-color);
 }
 .logo {
