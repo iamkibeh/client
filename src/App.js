@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./components/UI/Login";
+import Signup from './components/UI/Signup';
 import HomeNavBar from "./components/reusable/HomeNavBar";
 import Footer from "./components/reusable/Footer";
 import NavigationBar from "./components/reusable/NavigationBar";
@@ -27,7 +28,8 @@ function App() {
 								<NavigationBar />
 								<div className="home-page-container">
 									<Routes>
-										<Route exact path={"/"} element={<Login />} />
+                    <Route exact path={'/login'} element={<Login />} />
+                    <Route exact path={'/signup'} element={<Signup />} />
 										<Route exact path={"/c/home/"} element={<PostFeeds />} />
 										<Route
 											exact
@@ -67,4 +69,4 @@ function App() {
 	);
 }
 
-export default App;
+export default App
