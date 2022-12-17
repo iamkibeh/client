@@ -1,0 +1,57 @@
+:root {
+	--primary-color: #fff;
+	--seconndary-color: #000;
+	--button-color: #fc6c0f;
+	--weight-font-Colour: #15284c;
+	--grey-color: #ccc;
+	--background-color: #f7f9fa;
+	--line-draw: #e4e7eb;
+}
+.navbar-section-logo {
+	border-bottom: 1px solid var(--line-draw);
+	/* display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between; */
+}
+.moringa-log {
+	display: flex;
+	align-items: center;
+	justify-content: space-between !important;
+	padding: 20px;
+	/* width: 100%; */
+	background-color: var(--primary-color);
+}
+.logo {
+	height: 40px;
+	cursor: pointer;
+}
+.logo > img {
+	height: inherit;
+	object-fit: cover;
+}
+.profile-img {
+	display: flex;
+	align-items: center;
+}
+.profile-pic {
+	height: 30px;
+	width: 30px;
+	border: 1px solid var(--weight-font-Colour);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+}
+.profile-pic > img {
+	height: inherit;
+	width: inherit;
+	object-fit: cover;
+	border-radius: inherit;
+}
+.name-position {
+	margin-left: 5px;
+}
+
+.name-position {
+	cursor: pointer;
+}
