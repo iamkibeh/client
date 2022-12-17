@@ -1,6 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Signup = () => {
+  const navigate = useNavigate()
+  const handleLoginClick = () => {
+    navigate('/login')
+  }
   return (
     <div>
       welcome to the signup page
@@ -16,7 +21,7 @@ const Signup = () => {
           <div className='image-container-content'>
             <h2>One of us?</h2>
             <p>Sign in if you already has an account. We've missed you!</p>
-            <button>Login</button>
+            <button onClick={handleLoginClick}>Login</button>
           </div>
         </div>
         <div className='login-form-container'>

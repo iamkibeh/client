@@ -1,7 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../../styles/Login.css'
 
 function Login() {
+  const navigate = useNavigate()
+
+  const handleSignUpClick = () => {
+    navigate('/signup')
+  }
+
   return (
     <div>
       <h1>Welcome to Login Page</h1>
@@ -51,7 +58,7 @@ function Login() {
           <div className='image-container-content'>
             <h2>New here?</h2>
             <p>Sign up and discover great amount of new opportunities!</p>
-            <button>Sign up</button>
+            <button onClick={handleSignUpClick}>Sign up</button>
           </div>
         </div>
       </div>
