@@ -1,0 +1,52 @@
+/* Universal colour  */
+:root {
+	--primary-color: #fff;
+	--seconndary-color: #000;
+	--button-color: #fc6c0f;
+	--weight-font-Colour: #15284c;
+	--grey-color: #ccc;
+	--background-color: #f7f9fa;
+	--line-draw: #e4e7eb;
+}
+.feed-section {
+	margin: 0 auto;
+	width: 80%;
+	height: 79vh;
+	/* background-color: red; */
+}
+.card-post {
+	background-color: var(--primary-color);
+	width: 50%;
+	border: 1px solid var(--line-draw);
+	border-radius: 5px;
+}
+.profile-img-card {
+	display: flex;
+	align-items: center;
+}
+.profile-name-card {
+	margin-left: 10px;
+}
+.name-span {
+	display: flex;
+	align-items: baseline;
+}
+.profile-name-card .name-span > h2 {
+	font-size: 15px;
+}
+.profile-name-card .name-span > span {
+	font-size: 12px;
+	margin-left: 10px;
+	color: #666363;
+}
+.profile-name-card > p {
+	font-size: 12px;
+	font-weight: 600;
+	padding-top: 5px;
+	color: #666363;
+}
+.more-option-card {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
