@@ -188,11 +188,28 @@
 
 /* Working on the page navbar card */
 .navbar-card {
-	width: 100%;
+	width: 98%;
+	margin: 0 auto;
 	/* height: 50px; */
 	background-color: var(--primary-color);
-	border-bottom: 1px solid var(--grey-color);
+	/* border-bottom: 1px solid var(--line-draw); */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	/* padding: 20px; */
+}
+.home-details {
+	display: flex;
+	align-items: center;
+	padding: 11px;
+}
+.prime-container {
+	background-color: var(--primary-color);
+	border-bottom: 1px solid var(--line-draw);
+}
+.cad-items > h1 {
+	font-size: 20px;
+}
+.add-post {
+	margin-left: 30px;
 }
