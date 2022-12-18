@@ -10,6 +10,36 @@ const options = [
 	{ value: "Oldest posts", label: "Oldest posts" },
 ];
 function PostFeeds() {
+	const posts = [
+		{
+			id: 1,
+			profileImage:
+				"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+			userName: "Denis Ouma",
+			createdAt: "2 hours ago",
+			profession: "Software Engineer",
+			postTitle: "How to Become a data analyst by spending 0$",
+			postComment:
+				"A lot of you want to know how much time is required to become Data Analyst. Here is a tool-by-tool learning roadmap for freshers",
+			postImg:
+				"https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80",
+			comments: [1, 2, 3, 4, 5, 6],
+		},
+		{
+			id: 1,
+			profileImage:
+				"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+			userName: "Denis Ouma",
+			createdAt: "2 hours ago",
+			profession: "Software Engineer",
+			postTitle: "How to Become a data analyst by spending 0$",
+			postComment:
+				"A lot of you want to know how much time is required to become Data Analyst. Here is a tool-by-tool learning roadmap for freshers",
+			postImg:
+				"https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80",
+			comments: [1, 2, 3, 4, 5, 6],
+		},
+	];
 	const [selectedOption, setSelectedOption] = useState("null");
 	return (
 		<div className="feed-section-page">
@@ -38,8 +68,13 @@ function PostFeeds() {
 				</NavBarCard>
 			</div>
 			<div className="feed-section">
-				<PostCard />
+				{posts.map((post) => (
+					<div className="post-card" key={post.id}>
+						<PostCard props={post} />
+					</div>
+				))}
 			</div>
+			<div className="empty"></div>
 		</div>
 	);
 }
