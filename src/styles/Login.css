@@ -34,18 +34,21 @@
   align-items: center;
   padding: 0.3rem;
 }
-input,
+/* input,
 button {
   border: none;
   outline: none;
   background: none;
-}
+} */
 
 .form-input-group label {
   text-transform: uppercase;
   font-size: 12px;
 }
-.form-input-group input {
+.form-input-group > input {
+  border: none;
+  outline: none;
+  background: none;
   margin-bottom: 0.5rem;
   width: 100%;
   margin-top: 1rem;
@@ -68,7 +71,7 @@ button {
   margin-top: 1rem;
 }
 
-.login-button-container button {
+.login-button-container > button {
   margin-bottom: 0.5rem;
   width: 100%;
   padding: 0.6rem 0.4rem;
@@ -128,7 +131,10 @@ button {
   padding: 0.4rem;
 }
 
-.image-container-content button {
+.image-container-content > button {
+  border: none;
+  outline: none;
+  background: none;
   margin-top: 7.5rem;
   border: 2px solid #fff;
   color: #fff;

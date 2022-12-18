@@ -1,0 +1,123 @@
+.hire-talent-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* background-color: red; */
+}
+
+.hire-talent-left-container {
+  width: 30%;
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hire-talent-left-container > img {
+  width: 100%;
+}
+
+.hire-talent-left-container > .overlay-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hire-talent-right-container {
+  flex-grow: 1;
+  /* display: flex;
+  flex-direction: column; */
+  position: relative;
+}
+
+.hire-talent-header-nav {
+  background-color: rgb(255, 255, 255);
+}
+.hire-navigation-bar {
+  width: 80%;
+  margin: auto;
+  padding: 1.2em 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hire-navigation-bar > .sign-in-btn {
+  padding: 0.8rem 2.2rem;
+  border-radius: 30px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.hire-navigation-bar > .sign-in-btn:hover {
+  background-color: #c0c0c0;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  transition: all 2s ease;
+}
+
+.hire-talent-body {
+  width: 80%;
+  margin: auto;
+  padding: 1.5em 0.5rem;
+}
+
+.hire-talent-form-parent {
+  padding: 0.6rem 0;
+}
+
+.hire-talent-form-container {
+  padding: 1em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.2em;
+  /* width: 100%; */
+}
+
+.hire-talent-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.hire-talent-form-field > input,
+.hire-talent-form-field > select {
+  outline: none;
+  border: none;
+  padding: 1.2em;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+}
+
+.hire-talent-form-field > input:focus,
+.hire-talent-form-field > select:focus {
+  outline: none;
+  outline: none !important;
+  border-color: #696969;
+  box-shadow: 0 0 6px #696969;
+}
+
+.form-check-cont {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.form-check-cont > input {
+  width: 1.2rem;
+}
+
+.hire-talent-footer {
+  position: absolute;
+  bottom: 5rem;
+}
+.hire-talent-footer > .hire-navigation-bar > button {
+  border: none;
+  padding: 1rem 2.2rem;
+  border-radius: 30px;
+  background-color: #56c870;
+  cursor: pointer;
+}
