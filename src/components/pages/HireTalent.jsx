@@ -1,25 +1,27 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { Outlet, useNavigate } from 'react-router-dom'
 import logo from '../../img/logo.png'
 import '../../styles/hireTalent.css'
 
 const HireTalent = () => {
-  const [countries, setCountries] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+  const navigate = useNavigate()
+  const myPath = window.location.pathname
 
-  useEffect(() => {
-    fetch('https://restcountries.com/v2/all?fields=name')
-      .then((response) => response.json())
-      .then((data) => {
-        setCountries(data)
-        setIsLoading(false)
-      })
-  }, [])
+  const handleSignInClick = () => {
+    myPath === '/hire-talent/login'
+      ? navigate('/hire-talent')
+      : navigate('/hire-talent/login')
+  }
   return (
     <>
       <div className='hire-talent-container'>
         <div className='hire-talent-left-container'>
           <img
-            src='https://client.andela.com/assets/global/img_person_onboarding.png'
+            src={
+              myPath === '/hire-talent/login'
+                ? 'https://images.pexels.com/photos/5439403/pexels-photo-5439403.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                : 'https://client.andela.com/assets/global/img_person_onboarding.png'
+            }
             alt='developer holding a tablet'
           />
           <div className='overlay-image-container'></div>
@@ -30,94 +32,13 @@ const HireTalent = () => {
               <div className='logo'>
                 <img src={logo} alt='moringa school logo' />
               </div>
-              <button className='sign-in-btn'>Sign in</button>
+              <button className='sign-in-btn' onClick={handleSignInClick}>
+                {myPath === '/hire-talent/login' ? 'Sign Up' : 'Sign In'}
+              </button>
             </div>
           </div>
           <div className='hire-talent-body'>
-            <h2>Create your Client account to browse talent</h2>
-            <form action='' className='hire-talent-form-parent'>
-              <div className='hire-talent-form-container'>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='firstname'>First name*</label>
-                  <input type='text' name='firstname' id='firstname' />
-                </div>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='lastname'>Last name*</label>
-                  <input type='text' name='lastname' id='lastname' />
-                </div>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='companyEmail'>Work email*</label>
-                  <input type='email' name='company_email' id='companyEmail' />
-                </div>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='phone'>Phone number*</label>
-                  <input
-                    type='text'
-                    name='phone'
-                    id='phone'
-                    placeholder='716100222'
-                  />
-                </div>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='companyName'>Company's name*</label>
-                  <input type='text' name='company_name' id='companyName' />
-                </div>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='companyWebsite'>Company's Website*</label>
-                  <input
-                    type='text'
-                    name='company_website'
-                    id='companyWebsite'
-                  />
-                </div>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='country'>Country*</label>
-                  <select
-                    name='country'
-                    id='country'
-                    placeholder='Select a country'
-                  >
-                    {isLoading
-                      ? 'Loading'
-                      : countries.map((c, ind) => (
-                          <option key={ind} value={c.name}>
-                            {c.name}
-                          </option>
-                        ))}
-                    {/* <option value=''>Choose...</option>
-                    <option value=''>Choose...</option> */}
-                  </select>
-                </div>
-                <div className='hire-talent-form-field'></div>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='password'>Set password*</label>
-                  <input type='password' name='password' id='password' />
-                </div>
-                <div className='hire-talent-form-field'>
-                  <label htmlFor='password_confirmation'>
-                    Confirm password*
-                  </label>
-                  <input
-                    type='password'
-                    name='password_confirmation'
-                    id='password_confirmation'
-                  />
-                </div>
-              </div>
-              <div className='form-check-cont'>
-                <input type='checkbox' id='agree' name='agree' />
-                <label htmlFor='agree'>
-                  I agree to the terms and conditions of Moringa
-                </label>
-              </div>
-
-              {/* footer */}
-              <div className='hire-talent-footer'>
-                <div className='hire-navigation-bar '>
-                  <button type='submit'>Continue</button>
-                </div>
-              </div>
-            </form>
+            <Outlet />
           </div>
         </div>
       </div>

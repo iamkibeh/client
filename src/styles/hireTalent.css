@@ -18,6 +18,9 @@
 
 .hire-talent-left-container > img {
   width: 100%;
+  /* min-height: 80vh; */
+  object-fit: cover;
+  object-position: center;
 }
 
 .hire-talent-left-container > .overlay-image-container {
@@ -26,13 +29,11 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .hire-talent-right-container {
   flex-grow: 1;
-  /* display: flex;
-  flex-direction: column; */
   position: relative;
 }
 
@@ -50,13 +51,14 @@
 .hire-navigation-bar > .sign-in-btn {
   padding: 0.8rem 2.2rem;
   border-radius: 30px;
-  border: 2px solid black;
+  border: 1.5px solid black;
   cursor: pointer;
+  width: 8rem;
 }
 
 .hire-navigation-bar > .sign-in-btn:hover {
   background-color: #c0c0c0;
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
   transition: all 2s ease;
 }
 
@@ -93,6 +95,7 @@
 }
 
 .hire-talent-form-field > input:focus,
+.hire-talent-login-form > .hire-talent-login-form-group > input:focus,
 .hire-talent-form-field > select:focus {
   outline: none;
   outline: none !important;
@@ -112,12 +115,66 @@
 
 .hire-talent-footer {
   position: absolute;
-  bottom: 5rem;
+  bottom: 1rem;
 }
 .hire-talent-footer > .hire-navigation-bar > button {
   border: none;
   padding: 1rem 2.2rem;
   border-radius: 30px;
   background-color: #56c870;
+  cursor: pointer;
+}
+
+/* login styling */
+
+.hire-talent-login-container {
+  padding: 2rem;
+}
+.hire-talent-login-body {
+  width: 25rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.hire-talent-login-body > h2 {
+  margin-bottom: 1rem;
+}
+
+.hire-talent-login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hire-talent-login-form > .hire-talent-login-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hire-talent-login-form > .hire-talent-login-form-group > input {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+}
+.hire-talent-login-form-group > button {
+  margin: 2rem 0 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  background-color: #56c870;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sign-up-now {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-now > p > span {
+  color: #56c870;
   cursor: pointer;
 }

@@ -17,6 +17,8 @@ import Welcome from './components/pages/Welcome'
 import StartHere from './components/pages/StartHere'
 import FAQ from './components/pages/FAQ'
 import HireTalent from './components/pages/HireTalent'
+import HireTalentLogin from './components/pages/HireTalentLogin'
+import HireTalentSIgnUp from './components/pages/HireTalentSIgnUp'
 function App() {
   return (
     <>
@@ -31,11 +33,10 @@ function App() {
                   <Routes>
                     <Route exact path={'/login'} element={<Login />} />
                     <Route exact path={'/signup'} element={<Signup />} />
-                    <Route
-                      exact
-                      path={'/hire-talent'}
-                      element={<HireTalent />}
-                    />
+                    <Route exact path={'/hire-talent'} element={<HireTalent />}>
+                      <Route index path='' element={<HireTalentSIgnUp />} />
+                      <Route path='login' element={<HireTalentLogin />} />
+                    </Route>
                     <Route exact path={'/c/home/'} element={<PostFeeds />} />
                     <Route
                       exact
