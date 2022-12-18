@@ -11,7 +11,6 @@ function NavigationBar() {
 	const [jobs, setJobs] = React.useState(true);
 	const [started, SetStarted] = React.useState(true);
 	const [community, setCommunity] = React.useState(false);
-	const [open, setOpen] = React.useState(false);
 
 	const handleJobs = (e) => {
 		setJobs((current) => !current);
@@ -24,9 +23,6 @@ function NavigationBar() {
 		setCommunity((current) => !current);
 	};
 
-	const handleOpen = (e) => {
-		setOpen((current) => !current);
-	};
 	return (
 		<div className="dash-board-section">
 			<div className="side-bar">

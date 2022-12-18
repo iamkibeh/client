@@ -1,16 +1,11 @@
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
-import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import EditIcon from "@mui/icons-material/Edit";
 import Divider from "@mui/material/Divider";
-import ArchiveIcon from "@mui/icons-material/Archive";
-import FileCopyIcon from "@mui/icons-material/FileCopy";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import AutoFixNormalOutlinedIcon from "@mui/icons-material/AutoFixNormalOutlined";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 const StyledMenu = styled((props) => (
@@ -80,7 +75,7 @@ export default function BottomMenu() {
 				<div className="profile-details-inner">
 					<div className="profile-img-data">
 						<img
-							src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+							src="https://ik.imagekit.io/osr2ijzawtk/prod/upload/photo/8f7fa377-2b90-437d-bfa1-5058197d8fe3/adc42f4e-b71f-400d-bbcf-a8967b3fd352-jpeg?tr=h-284,w-284%27"
 							alt="profile"
 						/>
 					</div>

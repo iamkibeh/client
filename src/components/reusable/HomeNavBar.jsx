@@ -1,8 +1,6 @@
 import React from "react";
 import img from "../../img/logo.png";
 import "../../styles/NavBar.css";
-import { Icon } from "@iconify/react";
-import IconButton from "@mui/material/IconButton";
 import AccountMenu from "./AccountMenu";
 function HomeNavBar() {
 	return (
