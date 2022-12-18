@@ -105,9 +105,9 @@ function NavigationBar() {
 						</Link>
 					</div>
 					<div className="view-more">
-						<div className="align-item-btn">
+						<div className="align-item-btn" onClick={handleStarted}>
 							<ExpandMoreRoundedIcon />
-							<h3 onClick={handleStarted}>Get Started</h3>
+							<h3>Get Started</h3>
 						</div>
 						{started && (
 							<>
@@ -138,9 +138,9 @@ function NavigationBar() {
 						)}
 					</div>
 					<div className="view-more">
-						<div className="align-item-btn">
+						<div className="align-item-btn" onClick={handleJobs}>
 							<ExpandMoreRoundedIcon />
-							<h3 onClick={handleJobs}>Jobs Board</h3>
+							<h3>Jobs Board</h3>
 						</div>
 						{jobs && (
 							<>
@@ -226,9 +226,9 @@ function NavigationBar() {
 						)}
 					</div>
 					<div className="view-more">
-						<div className="align-item-btn">
+						<div className="align-item-btn" onClick={handleCommunity}>
 							<ExpandMoreRoundedIcon />
-							<h3 onClick={handleCommunity}>Community</h3>
+							<h3>Community</h3>
 						</div>
 						{community && (
 							<>

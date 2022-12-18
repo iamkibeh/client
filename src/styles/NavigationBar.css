@@ -178,3 +178,10 @@
 .menu {
 	cursor: pointer;
 }
+.align-item-btn {
+	padding: 5px 0px 5px 0px;
+}
+.align-item-btn:hover {
+	color: var(--primary-color);
+	background-color: var(--weight-font-Colour);
+}
