@@ -3,9 +3,9 @@ import Select from "react-select";
 import NavBarCard from "../reusable/NavBarCard";
 import Button from "@mui/material/Button";
 const options = [
-	{ value: "All ", label: "All" },
-	{ value: "Latest", label: "Latest" },
-	{ value: "Oldest", label: "Oldest" },
+	{ value: "All posts", label: "All posts" },
+	{ value: "Latest posts", label: "Latest posts" },
+	{ value: "Oldest posts", label: "Oldest posts" },
 ];
 function PostFeeds() {
 	const [selectedOption, setSelectedOption] = useState("null");
@@ -19,13 +19,18 @@ function PostFeeds() {
 							defaultValue={selectedOption}
 							onChange={setSelectedOption}
 							options={options}
-							placeholder="All Posts"
+							placeholder="Posts"
+							// styles={{ width: "200px" }}
 						/>
 					</div>
 					<div className="add-post">
 						{" "}
-						<Button variant="contained" color="success">
-							Success
+						<Button
+							variant="contained"
+							color="success"
+							style={{ fontWeight: "800" }}
+						>
+							New Post
 						</Button>
 					</div>
 				</div>
