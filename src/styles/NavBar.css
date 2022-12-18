@@ -34,14 +34,7 @@
 	display: flex;
 	align-items: center;
 }
-.profile-pic {
-	height: 30px;
-	width: 30px;
-	border: 1px solid var(--weight-font-Colour);
-	border-radius: 50px;
-	display: flex;
-	align-items: center;
-}
+
 .profile-pic > img {
 	height: inherit;
 	width: inherit;

@@ -149,3 +149,32 @@
 	object-fit: cover;
 	border-radius: 5px;
 }
+/* .parent-menu {
+	position: relative;
+} */
+/* 
+.absolute-container {
+	height: 0px;
+	z-index: 999;
+	position: relative;
+} */
+/* #basic-menu {
+	padding-bottom: 600px;
+}
+.view-more-menu {
+	height: 900px;
+	position: relative;
+	width: 500;
+	background-color: red;
+	margin-top: 30px;
+	z-index: 100;
+} */
+.span-title {
+	color: #666363;
+	font-weight: 800;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+.menu {
+	cursor: pointer;
+}
