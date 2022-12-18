@@ -185,3 +185,14 @@
 	color: var(--primary-color);
 	background-color: var(--weight-font-Colour);
 }
+
+/* Working on the page navbar card */
+.navbar-card {
+	width: 100%;
+	/* height: 50px; */
+	background-color: var(--primary-color);
+	border-bottom: 1px solid var(--grey-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
