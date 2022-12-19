@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
+import BottomMenu from "./BottomMenu";
 
 function NavigationBar() {
 	const [jobs, setJobs] = React.useState(true);
@@ -21,6 +22,7 @@ function NavigationBar() {
 	const handleCommunity = (e) => {
 		setCommunity((current) => !current);
 	};
+
 	return (
 		<div className="dash-board-section">
 			<div className="side-bar">
@@ -99,9 +101,9 @@ function NavigationBar() {
 						</Link>
 					</div>
 					<div className="view-more">
-						<div className="align-item-btn">
+						<div className="align-item-btn" onClick={handleStarted}>
 							<ExpandMoreRoundedIcon />
-							<h3 onClick={handleStarted}>Get Started</h3>
+							<h3>Get Started</h3>
 						</div>
 						{started && (
 							<>
@@ -132,9 +134,9 @@ function NavigationBar() {
 						)}
 					</div>
 					<div className="view-more">
-						<div className="align-item-btn">
+						<div className="align-item-btn" onClick={handleJobs}>
 							<ExpandMoreRoundedIcon />
-							<h3 onClick={handleJobs}>Jobs Board</h3>
+							<h3>Jobs Board</h3>
 						</div>
 						{jobs && (
 							<>
@@ -220,9 +222,9 @@ function NavigationBar() {
 						)}
 					</div>
 					<div className="view-more">
-						<div className="align-item-btn">
+						<div className="align-item-btn" onClick={handleCommunity}>
 							<ExpandMoreRoundedIcon />
-							<h3 onClick={handleCommunity}>Community</h3>
+							<h3>Community</h3>
 						</div>
 						{community && (
 							<>
@@ -253,20 +255,9 @@ function NavigationBar() {
 						)}
 					</div>
 				</div>
-				<div className="bottom-profile-bar">
-					<div className="profile-details-inner">
-						<div className="profile-img-data">
-							<img
-								src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
-								alt="profile"
-							/>
-						</div>
-						<div className="inner-title-data">
-							<h3>Denis Ouma</h3>
-							<p>Software Engineer</p>
-						</div>
-					</div>
-				</div>
+
+				{/* Enter the sidebar */}
+				<BottomMenu />
 			</div>
 		</div>
 	);
