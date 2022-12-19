@@ -28,16 +28,16 @@ function PostFeeds() {
 		{
 			id: 1,
 			profileImage:
-				"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-			userName: "Denis Ouma",
-			createdAt: "2 hours ago",
+				"https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1039&q=80",
+			userName: "Kibet Immanuel Ngèno",
+			createdAt: "8 hours ago",
 			profession: "Software Engineer",
 			postTitle: "How to Become a data analyst by spending 0$",
 			postComment:
 				"A lot of you want to know how much time is required to become Data Analyst. Here is a tool-by-tool learning roadmap for freshers",
 			postImg:
-				"https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80",
-			comments: [1, 2, 3, 4, 5, 6],
+				"https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+			comments: [1, 2, 3, 4],
 		},
 	];
 	const [selectedOption, setSelectedOption] = useState("null");

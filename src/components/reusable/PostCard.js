@@ -30,20 +30,26 @@ function PostCard({ props }) {
 			</div>
 			<div className="reaction-post-card">
 				<div className="icons-post-card">
-					<Icon
-						icon="simple-line-icons:like"
-						width="20"
-						height="20"
-						color="#666363"
-						className="like"
-					/>
-					<Icon
-						icon="material-symbols:mode-comment-outline"
-						width="20"
-						height="20"
-						color="#666363"
-						className="comment"
-					/>
+					<div className="left-like">
+						<Icon
+							icon="simple-line-icons:like"
+							width="20"
+							height="20"
+							color="#666363"
+							className="like"
+						/>
+						<p>Like</p>
+					</div>
+					<div className="right-comment">
+						<Icon
+							icon="material-symbols:mode-comment-outline"
+							width="20"
+							height="20"
+							color="#666363"
+							className="comment"
+						/>
+						<p>comment</p>
+					</div>
 				</div>
 				<p>{props.comments.length} comments</p>
 			</div>

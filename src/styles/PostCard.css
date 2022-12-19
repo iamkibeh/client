@@ -88,3 +88,22 @@
 	margin-bottom: 10px;
 	font-size: 18px;
 }
+
+.left-like,
+.right-comment {
+	display: flex;
+	align-items: center;
+}
+
+.right-comment > p {
+	font-size: 13px;
+	font-weight: 600;
+	padding-left: 10px;
+	color: #666363;
+}
+.left-like > p {
+	font-size: 13px;
+	font-weight: 600;
+	padding-left: 10px;
+	color: #666363;
+}
