@@ -10,14 +10,19 @@
 }
 .feed-section {
 	margin: 0 auto;
-	width: 70%;
+	width: 65%;
 	height: 80vh;
 	overflow-y: scroll;
-	/* background-color: red; */
+	display: flex;
+}
+.feed {
+	display: flex;
+	flex-direction: column;
 }
 .card-post {
 	background-color: var(--primary-color);
-	width: 60%;
+	width: 600px;
+	max-width: 650;
 	border: 1px solid var(--line-draw);
 	border-radius: 5px;
 	margin-top: 1.5rem;
@@ -93,6 +98,7 @@
 .right-comment {
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 }
 
 .right-comment > p {
@@ -106,4 +112,43 @@
 	font-weight: 600;
 	padding-left: 10px;
 	color: #666363;
+}
+.news {
+	margin-left: 50px;
+	margin-top: 1.5rem;
+}
+.news-feed {
+	background-color: var(--primary-color);
+	border: 1px solid var(--line-draw);
+	padding: 15px;
+	border-radius: 5px;
+	width: 300px;
+}
+.news-feed > h2 {
+	font-size: 16px;
+}
+.details-post {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.title-event {
+	color: #666363;
+	margin-left: 10px;
+}
+.title-event > h2 {
+	font-size: 15px;
+	font-weight: 700;
+	color: #000;
+}
+.title-event > p {
+	font-size: small;
+}
+.date-card {
+	background-color: var(--background-color);
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid var(--line-draw);
+	text-align: center;
 }

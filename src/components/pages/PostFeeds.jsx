@@ -4,6 +4,7 @@ import NavBarCard from "../reusable/NavBarCard";
 import Button from "@mui/material/Button";
 import PostCard from "../reusable/PostCard";
 import "../../styles/PostCard.css";
+import FeedSideNews from "../reusable/FeedSideNews";
 const options = [
 	{ value: "All posts", label: "All posts" },
 	{ value: "Latest posts", label: "Latest posts" },
@@ -68,11 +69,16 @@ function PostFeeds() {
 				</NavBarCard>
 			</div>
 			<div className="feed-section">
-				{posts.map((post) => (
-					<div className="post-card" key={post.id}>
-						<PostCard props={post} />
-					</div>
-				))}
+				<div className="feed">
+					{posts.map((post) => (
+						<div className="post-card" key={post.id}>
+							<PostCard props={post} />
+						</div>
+					))}
+				</div>
+				<div className="news">
+					<FeedSideNews />
+				</div>
 			</div>
 			<div className="empty"></div>
 		</div>
