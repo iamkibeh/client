@@ -1,180 +1,191 @@
+:root {
+	--moringa-btn: #fa5329;
+	--primary-color: #fff;
+}
+
 .hire-talent-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  /* background-color: red; */
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	/* background-color: red; */
 }
 
 .hire-talent-left-container {
-  width: 30%;
-  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+	width: 40%;
+	background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 
 .hire-talent-left-container > img {
-  width: 100%;
-  /* min-height: 80vh; */
-  object-fit: cover;
-  object-position: center;
+	width: 100%;
+	/* min-height: 80vh; */
+	height: inherit;
+	object-fit: cover;
+	object-position: center;
 }
 
 .hire-talent-left-container > .overlay-image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .hire-talent-right-container {
-  flex-grow: 1;
-  position: relative;
+	flex-grow: 1;
+	position: relative;
 }
 
 .hire-talent-header-nav {
-  background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
 }
 .hire-navigation-bar {
-  width: 80%;
-  margin: auto;
-  padding: 1.2em 0.5rem;
-  display: flex;
-  justify-content: space-between;
+	width: 80%;
+	margin: auto;
+	padding: 1.2em 0.5rem;
+	display: flex;
+	justify-content: space-between;
 }
 
 .hire-navigation-bar > .sign-in-btn {
-  padding: 0.8rem 2.2rem;
-  border-radius: 30px;
-  border: 1.5px solid black;
-  cursor: pointer;
-  width: 8rem;
+	padding: 0.8rem 2.2rem;
+	border-radius: 30px;
+	border: 1.5px solid black;
+	cursor: pointer;
+	width: 8rem;
 }
 
 .hire-navigation-bar > .sign-in-btn:hover {
-  background-color: #c0c0c0;
-  border: 1.5px solid rgba(0, 0, 0, 0.3);
-  transition: all 2s ease;
+	background-color: #c0c0c0;
+	border: 1.5px solid rgba(0, 0, 0, 0.3);
+	transition: all 2s ease;
 }
 
 .hire-talent-body {
-  width: 80%;
-  margin: auto;
-  padding: 1.5em 0.5rem;
+	width: 80%;
+	margin: auto;
+	padding: 1.5em 0.5rem;
 }
 
 .hire-talent-form-parent {
-  padding: 0.6rem 0;
+	padding: 0.6rem 0;
 }
 
 .hire-talent-form-container {
-  padding: 1em 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1.2em;
-  /* width: 100%; */
+	padding: 1em 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1.2em;
+	/* width: 100%; */
 }
 
 .hire-talent-form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
 }
 .hire-talent-form-field > input,
 .hire-talent-form-field > select {
-  outline: none;
-  border: none;
-  padding: 1.2em;
-  border-radius: 8px;
-  border: 1px solid #d3d3d3;
+	outline: none;
+	border: none;
+	padding: 1.2em;
+	border-radius: 8px;
+	border: 1px solid #d3d3d3;
 }
 
 .hire-talent-form-field > input:focus,
 .hire-talent-login-form > .hire-talent-login-form-group > input:focus,
 .hire-talent-form-field > select:focus {
-  outline: none;
-  outline: none !important;
-  border-color: #696969;
-  box-shadow: 0 0 6px #696969;
+	outline: none;
+	outline: none !important;
+	border-color: #696969;
+	box-shadow: 0 0 6px #696969;
 }
 
 .form-check-cont {
-  margin-top: 1rem;
-  display: flex;
-  gap: 0.4rem;
+	margin-top: 1rem;
+	display: flex;
+	gap: 0.4rem;
 }
 
 .form-check-cont > input {
-  width: 1.2rem;
+	width: 1.2rem;
 }
 
 .hire-talent-footer {
-  position: absolute;
-  bottom: 1rem;
+	position: absolute;
+	bottom: 1rem;
 }
 .hire-talent-footer > .hire-navigation-bar > button {
-  border: none;
-  padding: 1rem 2.2rem;
-  border-radius: 30px;
-  background-color: #56c870;
-  cursor: pointer;
+	border: none;
+	padding: 1rem 2.2rem;
+	border-radius: 30px;
+	background-color: var(--moringa-btn);
+	cursor: pointer;
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 17px;
 }
 
 /* login styling */
 
 .hire-talent-login-container {
-  padding: 2rem;
+	padding: 2rem;
 }
 .hire-talent-login-body {
-  width: 25rem;
-  margin: 0 auto;
-  padding: 1.5rem;
+	width: 25rem;
+	margin: 0 auto;
+	padding: 1.5rem;
 }
 
 .hire-talent-login-body > h2 {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .hire-talent-login-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .hire-talent-login-form > .hire-talent-login-form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 
 .hire-talent-login-form > .hire-talent-login-form-group > input {
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  border: 1px solid #d3d3d3;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 8px;
+	border: 1px solid #d3d3d3;
 }
 .hire-talent-login-form-group > button {
-  margin: 2rem 0 1rem;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  background-color: #56c870;
-  cursor: pointer;
-  font-size: 1rem;
+	margin: 2rem 0 1rem;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 30px;
+	background-color: var(--moringa-btn);
+	font-weight: 700;
+	cursor: pointer;
+	font-size: 1rem;
+	color: var(--primary-color);
 }
 
 .sign-up-now {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .sign-up-now > p > span {
-  color: #56c870;
-  cursor: pointer;
+	color: var(--moringa-btn);
+	cursor: pointer;
 }
