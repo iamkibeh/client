@@ -123,6 +123,7 @@
 	padding: 15px;
 	border-radius: 5px;
 	width: 300px;
+	margin-bottom: 20px;
 }
 .news-feed > h2 {
 	font-size: 16px;
@@ -131,7 +132,7 @@
 	display: flex;
 	align-items: center;
 	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .title-event {
 	color: #666363;
@@ -151,4 +152,7 @@
 	border-radius: 10px;
 	border: 1px solid var(--line-draw);
 	text-align: center;
+}
+.date-card > h3 {
+	font-size: 14px;
 }

@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import PostCard from "../reusable/PostCard";
 import "../../styles/PostCard.css";
 import FeedSideNews from "../reusable/FeedSideNews";
+import TrendingPosts from "../reusable/TrendingPosts";
 const options = [
 	{ value: "All posts", label: "All posts" },
 	{ value: "Latest posts", label: "Latest posts" },
@@ -78,6 +79,7 @@ function PostFeeds() {
 				</div>
 				<div className="news">
 					<FeedSideNews />
+					<TrendingPosts />
 				</div>
 			</div>
 			<div className="empty"></div>
