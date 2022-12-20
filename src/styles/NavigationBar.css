@@ -171,50 +171,50 @@
 	z-index: 100;
 } */
 .span-title {
-	color: #666363;
-	font-weight: 800;
-	margin-left: 20px;
-	padding-bottom: 10px;
+  color: #666363;
+  font-weight: 800;
+  margin-left: 20px;
+  padding-bottom: 10px;
 }
 .menu {
-	cursor: pointer;
+  cursor: pointer;
 }
 .align-item-btn {
-	padding: 5px 0px 5px 0px;
+  padding: 5px 0px 5px 0px;
 }
 .align-item-btn:hover {
-	color: var(--primary-color);
-	background-color: var(--weight-font-Colour);
+  color: var(--primary-color);
+  background-color: var(--weight-font-Colour);
 }
 
 /* Working on the page navbar card */
 .navbar-card {
-	width: 98%;
-	margin: 0 auto;
-	/* height: 50px; */
-	background-color: var(--primary-color);
-	/* border-bottom: 1px solid var(--line-draw); */
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	/* padding: 20px; */
+  width: 98%;
+  margin: 0 auto;
+  /* height: 50px; */
+  background-color: var(--primary-color);
+  /* border-bottom: 1px solid var(--line-draw); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 20px; */
 }
 .home-details {
-	display: flex;
-	align-items: center;
-	padding: 11px;
+  display: flex;
+  align-items: center;
+  padding: 11px;
 }
 .prime-container {
-	background-color: var(--primary-color);
-	border-bottom: 1px solid var(--line-draw);
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--line-draw);
 }
 .cad-items > h1 {
-	font-size: 20px;
+  font-size: 20px;
 }
 .add-post {
-	margin-left: 30px;
+  margin-left: 30px;
 }
 
 .css-13cymwt-control {
-	width: 100% !important;
+  width: 100% !important;
 }

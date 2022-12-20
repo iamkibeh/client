@@ -1,158 +1,158 @@
 /* Universal colour  */
 :root {
-	--primary-color: #fff;
-	--seconndary-color: #000;
-	--button-color: #fc6c0f;
-	--weight-font-Colour: #15284c;
-	--grey-color: #ccc;
-	--background-color: #f7f9fa;
-	--line-draw: #e4e7eb;
+  --primary-color: #fff;
+  --seconndary-color: #000;
+  --button-color: #fc6c0f;
+  --weight-font-Colour: #15284c;
+  --grey-color: #ccc;
+  --background-color: #f7f9fa;
+  --line-draw: #e4e7eb;
 }
 .feed-section {
-	margin: 0 auto;
-	width: 65%;
-	height: 80vh;
-	overflow-y: scroll;
-	display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: 80vh;
+  overflow-y: scroll;
+  display: flex;
 }
 .feed {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .card-post {
-	background-color: var(--primary-color);
-	width: 600px;
-	max-width: 650;
-	border: 1px solid var(--line-draw);
-	border-radius: 5px;
-	margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  width: 600px;
+  max-width: 650;
+  border: 1px solid var(--line-draw);
+  border-radius: 5px;
+  margin-top: 1.5rem;
 }
 .profile-img-card {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 .profile-name-card {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 .name-span {
-	display: flex;
-	align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 .profile-name-card .name-span > h2 {
-	font-size: 15px;
+  font-size: 15px;
 }
 .profile-name-card .name-span > span {
-	font-size: 12px;
-	margin-left: 10px;
-	color: #666363;
+  font-size: 12px;
+  margin-left: 10px;
+  color: #666363;
 }
 .profile-name-card > p {
-	font-size: 12px;
-	font-weight: 600;
-	padding-top: 5px;
-	color: #666363;
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 5px;
+  color: #666363;
 }
 .more-option-card {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 .empty {
-	height: 10px;
+  height: 10px;
 }
 .post-img-card {
-	width: 100%;
+  width: 100%;
 }
 .post-img-card > img {
-	width: inherit;
-	object-fit: cover;
+  width: inherit;
+  object-fit: cover;
 }
 .reaction-post-card {
-	border-top: 1px solid var(--line-draw);
-	display: flex;
-	align-items: center;
-	padding: 10px;
-	justify-content: space-between;
+  border-top: 1px solid var(--line-draw);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
 }
 .icons-post-card {
-	display: flex;
-	align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 .comment {
-	margin-left: 15px;
+  margin-left: 15px;
 }
 .reaction-post-card > p {
-	font-size: 12px;
-	font-weight: 700;
-	color: #666363;
+  font-size: 12px;
+  font-weight: 700;
+  color: #666363;
 }
 .post-title {
-	padding: 10px;
+  padding: 10px;
 }
 .post-title > h1 {
-	margin-bottom: 10px;
-	font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .left-like,
 .right-comment {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .right-comment > p {
-	font-size: 13px;
-	font-weight: 600;
-	padding-left: 10px;
-	color: #666363;
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 10px;
+  color: #666363;
 }
 .left-like > p {
-	font-size: 13px;
-	font-weight: 600;
-	padding-left: 10px;
-	color: #666363;
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 10px;
+  color: #666363;
 }
 .news {
-	margin-left: 50px;
-	margin-top: 1.5rem;
+  margin-left: 50px;
+  margin-top: 1.5rem;
 }
 .news-feed {
-	background-color: var(--primary-color);
-	border: 1px solid var(--line-draw);
-	padding: 15px;
-	border-radius: 5px;
-	width: 300px;
-	margin-bottom: 20px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--line-draw);
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+  margin-bottom: 20px;
 }
 .news-feed > h2 {
-	font-size: 16px;
+  font-size: 16px;
 }
 .details-post {
-	display: flex;
-	align-items: center;
-	margin-top: 10px;
-	margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .title-event {
-	color: #666363;
-	margin-left: 10px;
+  color: #666363;
+  margin-left: 10px;
 }
 .title-event > h2 {
-	font-size: 15px;
-	font-weight: 700;
-	color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
 }
 .title-event > p {
-	font-size: small;
+  font-size: small;
 }
 .date-card {
-	background-color: var(--background-color);
-	padding: 10px;
-	border-radius: 10px;
-	border: 1px solid var(--line-draw);
-	text-align: center;
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line-draw);
+  text-align: center;
 }
 .date-card > h3 {
-	font-size: 14px;
+  font-size: 14px;
 }
