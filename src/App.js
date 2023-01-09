@@ -19,6 +19,7 @@ import FAQ from './components/pages/FAQ'
 import HireTalent from './components/pages/HireTalent'
 import HireTalentLogin from './components/pages/HireTalentLogin'
 import HireTalentSIgnUp from './components/pages/HireTalentSIgnUp'
+import HomePage from './components/pages/HomePage'
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
                 {/* <NavigationBar /> */}
                 <div className='home-page-container'>
                   <Routes>
+                    <Route path='/' element={<HomePage />} />
                     <Route exact path={'/login'} element={<Login />} />
                     <Route exact path={'/signup'} element={<Signup />} />
                     <Route exact path={'/hire-talent'} element={<HireTalent />}>
@@ -76,4 +78,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
