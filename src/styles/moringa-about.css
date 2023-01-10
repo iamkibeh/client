@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/gotham-rounded');
+
+:root {
+    --primary-color: color: rgba(250, 81, 15, 1);
+    --font-size: 1.5rem;
+    --font-weight: 300;
+    --medium-font-weight: 350;
+    --line-height: 1.5;
+
+}
+
+.discover-grow-trans-sec {
+    /* background-color: green; */
+    width: 100%;
+    font-family: 'Gotham Rounded', sans-serif;
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    box-sizing: border-box;
+}
+
+.discover-grow-trans-sec>section {
+    /* background-color: orange; */
+    width: 75%;
+    margin: 4rem auto;
+}
+
+
+.discover-about .section-title {
+    font-size: 2.5rem;
+    font-weight: 350;
+    padding: 1rem;
+
+
+}
+
+.fade-right {
+    padding: 1rem;
+}
+
+.fade-right strong {
+    font-weight: var(--medium-font-weight);
+}
+
+.more-about {
+    margin-top: 1rem;
+
+}
+
+.more-about ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.more-about ul li {
+    border-color: rgb(229, 231, 235);
+    border-radius: 10px;
+    background-color: orange;
+    text-align: center;
+
+}
+
+.image-sec {
+    width: 100%;
+    height: 80%;
+    border-radius: inherit;
+
+}
+
+.image-sec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.text-centre-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+}
+
+.text-centre-about h5 {
+    font-weight: var(--medium-font-weight);
+}
