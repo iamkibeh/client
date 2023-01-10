@@ -1,4 +1,5 @@
 import React from 'react'
+import About from '../moringa-clone-pages/About'
 import HeroSection from '../moringa-clone-pages/HeroSection'
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div>
       {/* Home page here */}
       <HeroSection />
+      <About />
     </div>
   )
 }
