@@ -1,0 +1,42 @@
+:root {
+	--primary-color: #fff;
+	--seconndary-color: #000;
+	--button-color: #fc6c0f;
+	--weight-font-Colour: #15284c;
+	--grey-color: #ccc;
+	--background-color: #f7f9fa;
+	--line-draw: #e4e7eb;
+}
+.sponsor-parent-conatiner {
+	background-color: var(--grey-color);
+	padding-top: 2.5rem;
+	/* background-color: red; */
+}
+.component-title-name {
+	width: 45%;
+	margin: 0 auto;
+	text-align: center;
+}
+.component-title-name > p {
+	font-size: 3rem;
+	font-weight: 350;
+	line-height: 1.625;
+	color: var(--weight-font-Colour);
+	/* font-family: Roboto; */
+	font-family: "Gotham Rounded", sans-serif;
+}
+.sponsor-list-data {
+	width: 60%;
+	margin: 0 auto;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	display: grid;
+}
+.sponsor-img {
+	height: 9rem;
+	width: 9rem;
+}
+.sponsor-img > img {
+	width: inherit;
+	height: inherit;
+	object-fit: contain;
+}
